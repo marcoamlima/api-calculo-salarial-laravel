@@ -1,0 +1,68 @@
+{
+	"info": {
+		"_postman_id": "fc9cb3f9-3315-4ce3-a5f9-fdb7fbcc4de0",
+		"name": "Laravel testes",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32572582"
+	},
+	"item": [
+		{
+			"name": "Desconto salarial",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"salario\": 17000,\r\n  \"descontos_extras\": 90.00\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/calcular-descontos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"calcular-descontos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Aumento salarial",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"salario\": 17000,\r\n  \"aumento_percentual\": 30,\r\n  \"descontos_extras\": 90.00\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/calcular-aumento",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"calcular-aumento"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
